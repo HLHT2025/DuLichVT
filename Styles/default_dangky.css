@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: auto}
+form
+{
+	background-color:rgb(36, 42, 50);
+	border: 1px solid;
+	width: 420px;
+	height: 630px;
+	border-radius:10px;
+	padding:20px;
+	position: relative;
+}
+p
+{
+	width: 400px;
+	color: aliceblue;
+}
+b
+{
+	color:aliceblue;
+}
+h1
+{
+	font-family: Georgia;
+	padding: 10px;
+	margin-top: -10px;
+	color: aliceblue;
+}
+h3
+{
+	margin-left: 10px;
+	margin-top: 20px;
+	color: aliceblue;
+}
+.input-container {
+    position: relative;
+    margin: 20px;
+	text-align: center;
+}
+
+input {
+    width: 350px;
+	color: aliceblue;
+    padding: 10px 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+	display: inline-block; 
+	
+}
+
+label {
+	
+    position: absolute;
+    top: 10px;
+    left:30px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease; 
+	
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -9px;
+	left: 30px;
+    font-size: 14px; 
+    color: #007bff;
+	background: rgb(36, 42, 50);
+	
+}
+button
+{
+	background: blue;
+	color: white;
+	width: 200px;
+	height:50px;
+	border:1px;
+	border-radius: 5px;
+	font-size: 17px;
+}
+#khungdangky
+{
+	display: flex;
+}
+.container
+{
+	position:relative;
+	border-radius: 9px;
+	width: 470px;
+	height: 638px;
+	background: hsla(0,20%,3%,1.00);
+	z-index: 0;
+	overflow: hidden;
+	box-shadow: 3px 3px  hsla(0,0%,0%,0.74)
+}
+.container .borderline:nth-child(1)
+{
+	position: absolute;
+	top:-50%;
+	left:-50%;
+	width: 470px;
+	height: 638px;
+	background: hsla(0,20%,3%,1.00);
+	background: linear-gradient(0deg, transparent, transparent, #c70039, #c70039, #c70039);
+	transform-origin: bottom right;
+	animation: animate 6s linear infinite;
+}
+.container .borderline:nth-child(2)
+{
+	position: absolute;
+	top:-50%;
+	left:-50%;
+	width: 500px;
+	height: 474px;
+	background: hsla(0,20%,3%,1.00);
+	background: linear-gradient(0deg, transparent, transparent, #c70039, #c70039, #c70039);
+	transform-origin: bottom right;
+	animation: animate 6s linear infinite;
+	animation-delay: -1.5s;
+}
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	0% {
+		transform: rotate(-360deg);
+	}
+}
+#chinhsach
+{
+	margin-top: 1px;
+	width: 80px;
+	margin-bottom: 20px
+}
