@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đăng ký | Du lịch Vũng Tàu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- ĐÃ SỬA: Sử dụng CSS mới với font SVN-Gilroy -->
+<link rel="stylesheet" href="style/css_updated.css">
+<style>
+/* Sử dụng lại styles từ dangnhap.html */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--navy) 0%, #1a4d7a 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 110px 20px 40px 20px; /* ĐÃ SỬA: Padding lớn hơn cho form dài */
+}
+
+.borderline {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: rgba(201, 162, 77, 0.2);
+  animation: slideDown 3s ease-in-out infinite;
+}
+
+.borderline:nth-child(1) { left: 10%; animation-delay: 0s; }
+.borderline:nth-child(2) { left: 30%; animation-delay: 0.5s; }
+.borderline:nth-child(3) { right: 30%; animation-delay: 1s; }
+.borderline:nth-child(4) { right: 10%; animation-delay: 1.5s; }
+
+@keyframes slideDown {
+  0%, 100% { transform: translateY(-100%); }
+  50% { transform: translateY(100%); }
+}
+
+form {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+form h1 {
+  color: var(--navy);
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+
+form > p {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+form h3 {
+  color: var(--navy);
+  margin: 25px 0 15px 0;
+  font-size: 1.2rem;
+}
+
+#canle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-family: 'SVN-Gilroy', sans-serif;
+}
+
+.input-container input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 162, 77, 0.1);
+}
+
+.input-container label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: white;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 12px;
+  color: var(--gold);
+}
+
+#canle > b, #canle > a {
+  font-size: 14px;
+}
+
+#canle > a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+#khungdangky button {
+  width: 100%;
+  padding: 15px;
+  background: var(--gold);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'SVN-Gilroy', sans-serif;
+}
+
+#khungdangky button:hover {
+  background: #b8923d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(201, 162, 77, 0.3);
+}
+</style>
+</head>
+
+<body>
+<!-- ĐÃ SỬA: Header sát trên cùng -->
+<header>
+  <div class="logo-container">
+    <!-- GHI CHÚ: Logo tại images/logo.png -->
+    <img class="logo-img" src="images/logo.png" alt="Logo Du lịch Vũng Tàu"/>
+    <h3>Du lịch Vũng Tàu</h3>
+  </div>
+  <nav class="menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="diem_den.html">Điểm đến</a>
+    <a href="lichtrinh.html">Lịch trình</a>    <a href="kinhnghiem.html">Kinh nghiệm</a>
+    <a href="lienhe.html">Liên hệ</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="borderline"></div>
+  <div class="borderline"></div>
+  <div class="borderline"></div>
+  <div class="borderline"></div>
+  
+  <form id="registerForm">
+    <h1><center>ĐĂNG KÝ THÀNH VIÊN</center></h1>
+    <p>Quý khách vui lòng điền thông tin vào mẫu bên dưới để đăng ký thành viên. Xin chân thành cảm ơn quý khách.</p>
+    <h3>Thông tin cá nhân</h3>
+    
+    <div id="canle">
+      <div class="input-container">
+        <input type="text" id="myInput" placeholder=" " required/>
+        <label for="myInput">Tên của bạn</label>
+      </div>
+      
+      <div class="input-container">
+        <input type="date" id="ngaysinh" placeholder=" " required/>
+        <label for="ngaysinh">Ngày sinh</label>
+      </div>
+      
+      <div class="input-container">
+        <input type="password" id="password" placeholder=" " required/>
+        <label for="password">Mật khẩu</label>
+      </div>
+      
+      <div class="input-container">
+        <input type="password" id="xacnhanlai" placeholder=" " required/>
+        <label for="xacnhanlai">Nhập lại mật khẩu</label>
+      </div>
+      
+      <div class="input-container">
+        <input type="email" id="email" placeholder=" " required/>
+        <label for="email">Email</label>
+      </div>
+      
+      <div class="input-container">
+        <input type="tel" id="Sodienthoai" placeholder=" " required/>
+        <label for="Sodienthoai">Số điện thoại</label>
+      </div>
+      
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <input type="checkbox" id="chinhsach" value="" required style="width: auto;"/>
+        <label for="chinhsach" style="position: static; transform: none; background: none; padding: 0; font-size: 14px; color: #555; cursor: pointer;">
+          <b>Đồng ý với Điều khoản & </b><a href="#">Chính sách bảo mật</a>
+        </label>
+      </div>
+      
+      <div id="khungdangky">
+        <button type="submit">Đăng ký</button>
+      </div>
+      
+      <div style="text-align: center; margin-top: 15px;">
+        <a href="index.html" style="color: var(--navy); text-decoration: none; font-weight: 600;">← Quay lại Trang chủ</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// ĐÃ SỬA: Validation chi tiết hơn
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const name = document.getElementById('myInput').value.trim();
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('xacnhanlai').value;
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('Sodienthoai').value.trim();
+  const agreed = document.getElementById('chinhsach').checked;
+  
+  if (!agreed) {
+    alert('⚠️ Vui lòng đồng ý với Điều khoản & Chính sách bảo mật!');
+    return;
+  }
+  
+  if (password !== confirmPassword) {
+    alert('⚠️ Mật khẩu xác nhận không khớp!');
+    return;
+  }
+  
+  if (password.length < 6) {
+    alert('⚠️ Mật khẩu phải có ít nhất 6 ký tự!');
+    return;
+  }
+  
+  // Lưu thông tin đăng ký
+  localStorage.setItem('username', name);
+  localStorage.setItem('email', email);
+  
+  alert('✅ Đăng ký thành công! Chào mừng bạn đến với Du lịch Vũng Tàu.');
+  
+  // Chuyển về trang chủ
+  window.location.href = 'index.html';
+});
+</script>
+</body>
+</html>

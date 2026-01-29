@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Liên hệ | Du lịch Vũng Tàu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- ĐÃ SỬA: Sử dụng CSS mới với font SVN-Gilroy -->
+  <link rel="stylesheet" href="style/css_updated.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ĐÃ SỬA: Header sát trên cùng -->
+<header>
+  <div class="logo-container">
+    <!-- GHI CHÚ: Logo tại images/logo.png -->
+    <img class="logo-img" src="images/logo.png" alt="Logo Du lịch Vũng Tàu"/>
+    <h3>Du lịch Vũng Tàu</h3>
+  </div>
+  <nav class="menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="diem_den.html">Điểm đến</a>
+    <a href="lichtrinh.html">Lịch trình</a>
+    <a href="kinhnghiem.html">Kinh nghiệm</a>
+    <a href="lienhe.html">Liên hệ</a>
+    <a href="dangnhap.html" class="cta">ĐĂNG NHẬP</a>
+  </nav>
+</header>
+
+<main class="page">
+  <!-- ĐÃ SỬA: Thêm class hero-contact để có ảnh riêng -->
+  <section class="hero small hero-contact">
+    <!-- GHI CHÚ: Ảnh hero cho trang liên hệ - images/hero-contact.jpg -->
+    <div class="hero-content">
+      <h1>Liên hệ với chúng tôi</h1>
+      <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <!-- Thông tin liên hệ -->
+      <div class="contact-info">
+        <h2>Thông tin liên hệ</h2>
+        
+        <div class="info-item">
+          <h3>📍 Địa chỉ</h3>
+          <p>123 Đường Thùy Vân, Phường Thắng Tam<br/>Thành phố Vũng Tàu, Tỉnh Bà Rịa - Vũng Tàu</p>
+        </div>
+
+        <div class="info-item">
+          <h3>📞 Điện thoại</h3>
+          <p>Hotline: <a href="tel:02541234567">0254.123.4567</a></p>
+          <p>Zalo: <a href="tel:0909123456">0909.123.456</a></p>
+        </div>
+
+        <div class="info-item">
+          <h3>✉️ Email</h3>
+          <p><a href="mailto:info@dulichvungtau.vn">info@dulichvungtau.vn</a></p>
+          <p><a href="mailto:hotro@dulichvungtau.vn">hotro@dulichvungtau.vn</a></p>
+        </div>
+
+        <div class="info-item">
+          <h3>🕐 Giờ làm việc</h3>
+          <p>Thứ 2 - Thứ 7: 8:00 - 18:00</p>
+          <p>Chủ nhật: 8:00 - 17:00</p>
+          <p><em>Hỗ trợ khẩn cấp 24/7 qua hotline</em></p>
+        </div>
+
+        <div class="info-item">
+          <h3>🏢 Thông tin công ty</h3>
+          <p><strong>Công ty TNHH Du lịch Biển Xanh</strong></p>
+          <p>Mã số thuế: 0123456789</p>
+          <p>Giấy phép LHQT: 01-234/2020/TCDL-GP LHQT</p>
+        </div>
+      </div>
+
+      <!-- Form liên hệ -->
+      <div class="contact-form-wrapper">
+        <h2>Gửi yêu cầu tư vấn</h2>
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Họ và tên *" required/>
+          <input type="email" id="email" placeholder="Email *" required/>
+          <input type="tel" id="phone" placeholder="Số điện thoại *" required/>
+          <select id="service">
+            <option value="">Dịch vụ quan tâm</option>
+            <option value="tour">Tour du lịch</option>
+            <option value="hotel">Đặt khách sạn</option>
+            <option value="transport">Thuê xe</option>
+            <option value="other">Khác</option>
+          </select>
+          <textarea id="message" placeholder="Nội dung cần tư vấn" rows="5"></textarea>
+          <button type="submit" class="btn-gold">Gửi yêu cầu</button>
+          <p id="result"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map-container">
+      <h2>Vị trí của chúng tôi</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125419.36729287247!2d107.01503544335938!3d10.411005099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756e29a000ea3d%3A0x7685e5ba3e29798e!2zVsWpbmcgVMOgdSwgQsOgIFLhu4thIC0gVsWpbmcgVMOgdSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1234567890123!5m2!1svi!2s" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+      <p class="map-note">📍 Văn phòng chúng tôi nằm trên đường Thùy Vân, gần Bãi Sau, dễ dàng tìm thấy</p>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Công ty Du lịch Biển Xanh</h3>
+      <p>📍 123 Đường Thùy Vân, Phường Thắng Tam, TP. Vũng Tàu</p>
+      <p>📞 Hotline: <a href="tel:02541234567">0254.123.4567</a></p>
+      <p>✉️ Email: <a href="mailto:info@dulichvungtau.vn">info@dulichvungtau.vn</a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Liên kết nhanh</h3>
+      <p><a href="gioithieu.html">Giới thiệu</a></p>
+      <p><a href="diem_den.html">Điểm đến</a></p>
+      <p><a href="kinhnghiem.html">Kinh nghiệm</a></p>
+      <p><a href="lienhe.html">Liên hệ</a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Kết nối với chúng tôi</h3>
+      <!-- GHI CHÚ: Icon mạng xã hội -->
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook"/></a>
+        <a href="#" aria-label="Zalo"><img src="images/zalo-icon.png" alt="Zalo"/></a>
+        <a href="#" aria-label="Messenger"><img src="images/messenger-icon.png" alt="Messenger"/></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2026 Công ty TNHH Du lịch Biển Xanh. Giấy phép kinh doanh số: 0123456789</p>
+    <p>Bản quyền nội dung thuộc về Du lịch Vũng Tàu. Mọi hành vi sao chép đều bị nghiêm cấm.</p>
+  </div>
+</footer>
+
+<script src="scripts/taitrang.js"></script>
+<script>
+const form = document.getElementById("contactForm");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (name === "" || email === "" || phone === "") {
+    result.style.color = "red";
+    result.textContent = "⚠️ Vui lòng nhập đầy đủ thông tin bắt buộc!";
+    return;
+  }
+
+  if (!email.includes("@")) {
+    result.style.color = "red";
+    result.textContent = "⚠️ Email không hợp lệ!";
+    return;
+  }
+
+  result.style.color = "green";
+  result.textContent = "✅ Gửi yêu cầu thành công! Chúng tôi sẽ liên hệ với bạn trong 24h.";
+  
+  setTimeout(() => {
+    form.reset();
+    result.textContent = "";
+  }, 3000);
+});
+</script>
+</body>
+</html>
