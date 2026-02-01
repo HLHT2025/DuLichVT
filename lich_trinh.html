@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lịch trình Tour | Du lịch Vũng Tàu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style/css_updated.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    .tour-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      padding: 60px 10%;
+    }
+    
+    .tour-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .tour-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .tour-header {
+      background: linear-gradient(135deg, var(--navy), #1a4d7a);
+      color: white;
+      padding: 25px;
+    }
+    
+    .tour-header h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.5rem;
+        color: white;
+    }
+    
+    .tour-price {
+      font-size: 1.8rem;
+      color: var(--gold);
+      font-weight: bold;
+    }
+    
+    .tour-body {
+      padding: 25px;
+    }
+    
+    .tour-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--light-gray);
+    }
+    
+    .tour-info:last-child {
+      border-bottom: none;
+    }
+    
+    .tour-info strong {
+      color: var(--navy);
+      min-width: 100px;
+    }
+    
+    .tour-schedule {
+      background: var(--light-gray);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    
+    .tour-schedule h4 {
+      color: var(--navy);
+      margin-bottom: 15px;
+    }
+    
+    .tour-schedule ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .tour-schedule li {
+      padding: 8px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+    
+    .tour-schedule li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: bold;
+    }
+    
+    .tour-note {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img class="logo-img" src="images/logo.png" alt="Logo Du lịch Vũng Tàu"/>
+    <h3>Du lịch Vũng Tàu</h3>
+  </div>
+  <nav class="menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="diem_den.html">Điểm đến</a>
+    <a href="lich_trinh.html">Lịch trình</a>
+    <a href="kinhnghiem.html">Kinh nghiệm</a>
+    <a href="lienhe.html">Liên hệ</a>
+    <a href="dangnhap.html" class="cta" id="loginBtn">ĐĂNG NHẬP</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero small" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-destinations.jpg');">
+    <div class="hero-content">
+      <h1>Lịch trình Tour Vũng Tàu</h1>
+      <p>Chọn gói tour phù hợp với nhu cầu của bạn</p>
+    </div>
+  </section>
+
+  <div class="tour-grid">
+    
+    <!-- TOUR 1: 1 NGÀY -->
+    <div class="tour-card">
+      <div class="tour-header">
+        <h3>🌊 Tour 1 Ngày Vũng Tàu</h3>
+        <div class="tour-price">850.000đ/người</div>
+        <small>Khám phá nhanh thành phố biển</small>
+      </div>
+      <div class="tour-body">
+        <div class="tour-info">
+          <strong>⏱️ Thời gian:</strong>
+          <span>1 ngày (6:00 - 19:00)</span>
+        </div>
+        <div class="tour-info">
+          <strong>🚗 Phương tiện:</strong>
+          <span>Xe limousine 16 chỗ</span>
+        </div>
+        <div class="tour-info">
+          <strong>🍽️ Bao gồm:</strong>
+          <span>Ăn trưa, vé tham quan</span>
+        </div>
+        
+        <div class="tour-schedule">
+          <h4>📋 Lịch trình:</h4>
+          <ul>
+            <li><strong>6:00</strong> - Khởi hành từ TP.HCM</li>
+            <li><strong>8:30</strong> - Tượng Chúa Kitô - chụp ảnh</li>
+            <li><strong>10:00</strong> - Hải Đăng cổ - ngắm view</li>
+            <li><strong>12:00</strong> - Ăn trưa hải sản tươi</li>
+            <li><strong>13:30</strong> - Tắm biển Bãi Sau</li>
+            <li><strong>16:00</strong> - Làng Bè - mua hải sản</li>
+            <li><strong>17:30</strong> - Khởi hành về TP.HCM</li>
+          </ul>
+        </div>
+        
+        <div class="tour-note">
+          <strong>📌 Lưu ý:</strong> Mang theo đồ bơi, kem chống nắng
+        </div>
+        
+       <a href="lienhe.html?tour=Tour%201%20Ngày%20Vũng%20Tàu"
+          class="btn-gold"
+          style="display: block; text-align: center; margin-top: 20px;"> Đặt tour ngay </a>
+      </div>
+    </div>
+
+    <!-- TOUR 2: 2N1Đ -->
+    <div class="tour-card">
+      <div class="tour-header">
+        <h3>🏖️ Tour 2 Ngày 1 Đêm</h3>
+        <div class="tour-price">1.950.000đ/người</div>
+        <small>Nghỉ dưỡng & khám phá trọn vẹn</small>
+      </div>
+      <div class="tour-body">
+        <div class="tour-info">
+          <strong>⏱️ Thời gian:</strong>
+          <span>2 ngày 1 đêm</span>
+        </div>
+        <div class="tour-info">
+          <strong>🏨 Khách sạn:</strong>
+          <span>3 sao (gần biển)</span>
+        </div>
+        <div class="tour-info">
+          <strong>🍽️ Bao gồm:</strong>
+          <span>3 bữa chính + 1 bữa sáng</span>
+        </div>
+        
+        <div class="tour-schedule">
+          <h4>📋 Ngày 1:</h4>
+          <ul>
+            <li>Khởi hành sáng - Tượng Chúa</li>
+            <li>Hải Đăng - Bãi Trước</li>
+            <li>Ăn trưa hải sản</li>
+            <li>Nhận phòng khách sạn</li>
+            <li>Tắm biển - nghỉ ngơi</li>
+            <li>Tối: Ăn tối + dạo phố đêm</li>
+          </ul>
+          
+          <h4 style="margin-top: 15px;">📋 Ngày 2:</h4>
+          <ul>
+            <li>Bữa sáng buffet</li>
+            <li>Làng Bè - mua hải sản</li>
+            <li>Bãi Dứa - chụp ảnh</li>
+            <li>Ăn trưa - trả phòng</li>
+            <li>Về TP.HCM</li>
+          </ul>
+        </div>
+        
+   <a href="lienhe.html?tour=Tour%202%20Ngày%201%20Đêm"
+   class="btn-gold"
+   style="display: block; text-align: center; margin-top: 20px;">Đặt tour ngay </a>
+		  
+      </div>
+    </div>
+
+    <!-- TOUR 3: 3N2Đ -->
+    <div class="tour-card">
+      <div class="tour-header">
+        <h3>🌴 Tour 3 Ngày 2 Đêm</h3>
+        <div class="tour-price">3.200.000đ/người</div>
+        <small>Nghỉ dưỡng cao cấp & khám phá sâu</small>
+      </div>
+      <div class="tour-body">
+        <div class="tour-info">
+          <strong>⏱️ Thời gian:</strong>
+          <span>3 ngày 2 đêm</span>
+        </div>
+        <div class="tour-info">
+          <strong>🏨 Khách sạn:</strong>
+          <span>4 sao view biển</span>
+        </div>
+        <div class="tour-info">
+          <strong>🍽️ Bao gồm:</strong>
+          <span>6 bữa chính + 2 bữa sáng</span>
+        </div>
+        
+        <div class="tour-schedule">
+          <h4>📋 Highlights:</h4>
+          <ul>
+            <li>Tất cả điểm đến nổi tiếng VT</li>
+            <li>Suối nước nóng Bình Châu</li>
+            <li>Biển Long Hải hoang sơ</li>
+            <li>Hải sản cao cấp</li>
+            <li>Spa thư giãn</li>
+            <li>Thời gian tự do khám phá</li>
+          </ul>
+        </div>
+        
+        <div class="tour-note">
+          <strong>🎁 Ưu đãi:</strong> Tặng 1 bữa BBQ seafood bên bờ biển
+        </div>
+        
+   <a href="lienhe.html?tour=Tour%203%20Ngày%202%20Đêm"
+   class="btn-gold"
+   style="display: block; text-align: center; margin-top: 20px;"> Đặt tour ngay</a>
+		  
+      </div>
+    </div>
+
+    <!-- TOUR 4: GIA ĐÌNH -->
+    <div class="tour-card">
+      <div class="tour-header">
+        <h3>👨‍👩‍👧‍👦 Tour Gia Đình 2N1Đ</h3>
+        <div class="tour-price">1.750.000đ/người</div>
+        <small>Thích hợp cho gia đình có trẻ nhỏ</small>
+      </div>
+      <div class="tour-body">
+        <div class="tour-info">
+          <strong>⏱️ Thời gian:</strong>
+          <span>2 ngày 1 đêm</span>
+        </div>
+        <div class="tour-info">
+          <strong>👶 Phù hợp:</strong>
+          <span>Trẻ em từ 3 tuổi</span>
+        </div>
+        <div class="tour-info">
+          <strong>🎠 Ưu đãi:</strong>
+          <span>Trẻ dưới 5 tuổi miễn phí</span>
+        </div>
+        
+        <div class="tour-schedule">
+          <h4>📋 Điểm đến:</h4>
+          <ul>
+            <li>Công Viên Thỏ Trắng</li>
+            <li>Bãi biển Bãi Sau (an toàn)</li>
+            <li>Nhà hàng kid-friendly</li>
+            <li>Khách sạn có hồ bơi trẻ em</li>
+            <li>Làng Bè xem cá</li>
+            <li>Chụp ảnh gia đình chuyên nghiệp</li>
+          </ul>
+        </div>
+        
+        <div class="tour-note">
+          <strong>🎈 Đặc biệt:</strong> HDV có kinh nghiệm chăm sóc trẻ nhỏ
+        </div>
+        
+   <a href="lienhe.html?tour=Tour%20Gia%20Đình%202N1Đ"
+   class="btn-gold"
+   style="display: block; text-align: center; margin-top: 20px;">Đặt tour ngay</a>
+		  
+      </div>
+    </div>
+
+    <!-- TOUR 5: TEAMBUILDING -->
+    <div class="tour-card">
+      <div class="tour-header">
+        <h3>🎯 Tour Team Building 2N1Đ</h3>
+        <div class="tour-price">2.400.000đ/người</div>
+        <small>Dành cho công ty & tổ chức</small>
+      </div>
+      <div class="tour-body">
+        <div class="tour-info">
+          <strong>👥 Số người:</strong>
+          <span>Từ 20 người trở lên</span>
+        </div>
+        <div class="tour-info">
+          <strong>🏨 Resort:</strong>
+          <span>4 sao có khu vực riêng</span>
+        </div>
+        <div class="tour-info">
+          <strong>🎪 Hoạt động:</strong>
+          <span>Trò chơi, BBQ, Gala dinner</span>
+        </div>
+        
+        <div class="tour-schedule">
+          <h4>📋 Chương trình:</h4>
+          <ul>
+            <li>Trò chơi teambuilding bãi biển</li>
+            <li>Thi đấu thể thao nước</li>
+            <li>BBQ seafood tối 1</li>
+            <li>Gala Dinner tối 2</li>
+            <li>Tham quan điểm đến</li>
+            <li>Free time nghỉ dưỡng</li>
+          </ul>
+        </div>
+        
+        <div class="tour-note">
+          <strong>💼 Hỗ trợ:</strong> MC, âm thanh, ánh sáng, backdrop
+        </div>
+        
+   <a href="lienhe.html?tour=Tour%20Team%20Building%202N1Đ"
+   class="btn-gold"
+   style="display: block; text-align: center; margin-top: 20px;"> Đặt tour ngay</a>
+		  
+      </div>
+    </div>
+
+    <!-- TOUR 6: HONEYMOON -->
+    <div class="tour-card">
+      <div class="tour-header">
+        <h3>💑 Tour Honeymoon 3N2Đ</h3>
+        <div class="tour-price">6.500.000đ/cặp</div>
+        <small>Lãng mạn cho cặp đôi mới cưới</small>
+      </div>
+      <div class="tour-body">
+        <div class="tour-info">
+          <strong>⏱️ Thời gian:</strong>
+          <span>3 ngày 2 đêm</span>
+        </div>
+        <div class="tour-info">
+          <strong>🏨 Resort:</strong>
+          <span>5 sao với spa & view biển</span>
+        </div>
+        <div class="tour-info">
+          <strong>🌹 Phong cách:</strong>
+          <span>Riêng tư, lãng mạn</span>
+        </div>
+        
+        <div class="tour-schedule">
+          <h4>📋 Trải nghiệm VIP:</h4>
+          <ul>
+            <li>Phòng honeymoon decor hoa</li>
+            <li>Dinner lãng mạn bên bờ biển</li>
+            <li>Spa massage cho 2 người</li>
+            <li>Chụp ảnh cưới ngoại cảnh</li>
+            <li>Tặng rượu vang cao cấp</li>
+            <li>Xe riêng + HDV riêng</li>
+          </ul>
+        </div>
+        
+        <div class="tour-note">
+          <strong>💝 Đặc biệt:</strong> Tặng album ảnh + video highlight
+        </div>
+
+<a href="lienhe.html?tour=Tour%20Honeymoon%203N2Đ"
+   class="btn-gold"
+   style="display: block; text-align: center; margin-top: 20px;">Đặt tour ngay</a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA SECTION -->
+  <section style="background: var(--light-gray); padding: 60px 10%; text-align: center;">
+    <h2 style="color: var(--navy); margin-bottom: 20px;">Không tìm thấy tour phù hợp?</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 30px; color: #666;">
+      Chúng tôi có thể thiết kế lịch trình riêng theo yêu cầu của bạn
+    </p>
+    <a href="lienhe.html" class="btn-gold" style="display: inline-block; padding: 15px 40px; font-size: 1.1rem;">
+      Liên hệ tư vấn miễn phí
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Công ty Du lịch Vũng Tàu</h3>
+      <p>📍 123 Đường Thùy Vân, Phường Thắng Tam, TP. Vũng Tàu</p>
+      <p>📞 Hotline: <a href="tel:02541234567">0254.123.4567</a></p>
+      <p>✉️ Email: <a href="mailto:info@dulichvungtau.vn">info@dulichvungtau.vn</a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Liên kết nhanh</h3>
+      <p><a href="gioithieu.html">Giới thiệu</a></p>
+      <p><a href="diem_den.html">Điểm đến</a></p>
+      <p><a href="kinhnghiem.html">Kinh nghiệm</a></p>
+      <p><a href="lienhe.html">Liên hệ</a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Kết nối với chúng tôi</h3>
+      <div class="social-links">
+        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"/></a>
+        <a href="#"><img src="images/zalo-icon.png" alt="Zalo"/></a>
+        <a href="#"><img src="images/messenger-icon.png" alt="Messenger"/></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2026 Công ty TNHH Du lịch Vũng Tàu. Giấy phép kinh doanh số: 0123456789</p>
+      <p>Bản quyền nội dung thuộc về Du lịch Vũng Tàu. Mọi hành vi sao chép đều bị nghiêm cấm.</p>
+  </div>
+</footer>
+
+<script src="scripts/taitrang.js"></script>
+<script>
+// Kiểm tra đăng nhập
+window.addEventListener('load', function() {
+  const username = localStorage.getItem('username');
+  const loginBtn = document.getElementById('loginBtn');
+  
+  if (username && loginBtn) {
+    loginBtn.innerHTML = '<div style="display: flex; align-items: center; gap: 8px;"><img src="images/user-avatar.png" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;"/><span>' + username + '</span></div>';
+    loginBtn.href = "#";
+    loginBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (confirm('Xin chào ' + username + '! Bạn có muốn đăng xuất?')) {
+        localStorage.removeItem('username');
+        localStorage.removeItem('email');
+        window.location.reload();
+      }
+    });
+  }
+});
+</script>
+	<script src="scripts/auth.js"></script>
+</body>
+</html>
