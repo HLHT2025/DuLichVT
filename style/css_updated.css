@@ -1,0 +1,1076 @@
+/* ========================================
+   WEBSITE DU LỊCH VŨNG TÀU - CSS
+   Font chủ đạo: SVN-Gilroy
+   Cập nhật: 2026
+   ======================================== */
+
+/* Import font SVN-Gilroy */
+@import url('https://fonts.cdnfonts.com/css/svn-gilroy');
+
+:root {
+  --navy: #0E2A47;
+  --gold: #C9A24D;
+  --white: #F7F7F5;
+  --light-gray: #eef3f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* ĐÃ SỬA: Đổi font chính thành SVN-Gilroy */
+  font-family: 'SVN-Gilroy', 'Inter', sans-serif;
+}
+
+h3{
+    color: white;
+}
+
+body {
+  background: var(--white);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+/* ========================================
+   HEADER & NAVIGATION
+   ĐÃ SỬA: Kéo header sát trên cùng (top: 0)
+   ======================================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0; /* ĐÃ SỬA: Thêm top: 0 để sát trên */
+  left: 0; /* ĐÃ SỬA: Thêm left: 0 */
+  background: rgba(14, 42, 71, 0.95);
+  backdrop-filter: blur(5px);
+  color: white;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* ĐÃ SỬA: Dùng gap thay vì margin */
+}
+
+.logo-container h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+    color: white;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px; /* ĐÃ SỬA: Đảm bảo logo vuông vắn */
+  object-fit: contain;
+  /* GHI CHÚ: Thêm logo tại images/logo.png */
+}
+
+.menu {
+    padding-right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* ĐÃ SỬA: Dùng gap thống nhất */
+    
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500; /* ĐÃ SỬA: Tăng độ đậm */
+  transition: all 0.3s ease;
+  padding: 5px 10px; /* ĐÃ SỬA: Thêm padding cho dễ click */
+}
+
+nav a:hover {
+  color: var(--gold);
+  transform: translateY(-2px); /* ĐÃ SỬA: Thêm hiệu ứng nâng */
+}
+
+nav .cta {
+  background: var(--gold);
+  padding: 10px 25px; /* ĐÃ SỬA: Tăng padding */
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+nav .cta:hover {
+  background: #b8923d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(201, 162, 77, 0.3); /* ĐÃ SỬA: Thêm shadow */
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gold);
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+.user-profile img {
+  /* GHI CHÚ: Avatar người dùng - images/user-avatar.png */
+}
+
+/* ========================================
+   HERO SECTIONS
+   ĐÃ SỬA: Điều chỉnh margin-top cho phù hợp với header
+   ======================================== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2));
+  /* GHI CHÚ: Ảnh hero chính - images/hero-bg.jpg (1920x1080px) */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* ĐÃ SỬA: Thêm parallax effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 0; /* ĐÃ SỬA: Bỏ margin-top vì header đã fixed */
+  padding-top: 90px; /* ĐÃ SỬA: Thêm padding để tránh bị header che */
+}
+
+.hero.small {
+  height: 50vh; /* ĐÃ SỬA: Tăng chiều cao hero nhỏ */
+  min-height: 400px; /* ĐÃ SỬA: Thêm min-height */
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem; /* ĐÃ SỬA: Tăng kích thước */
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* ĐÃ SỬA: Thêm shadow */
+  animation: fadeInUp 1s ease; /* ĐÃ SỬA: Thêm animation */
+}
+
+.hero p {
+  font-size: 1.3rem; /* ĐÃ SỬA: Tăng kích thước */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  animation: fadeInUp 1s ease 0.2s both; /* ĐÃ SỬA: Animation với delay */
+}
+
+/* Hero mặc định */
+.hero {
+  background-image: url("../images/hero-bg.jpg",linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)));
+}
+
+/* Hero riêng cho từng trang */
+.hero.hero-home {
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url("../images/hero-home.jpg");
+}
+
+.hero.hero-destinations {
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/hero-destinations.jpg");
+}
+
+.hero.hero-experience {
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/hero-experience.jpg");
+}
+
+.hero.hero-about {
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/hero-about.jpg");
+}
+
+.hero.hero-contact {
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/hero-contact.jpg");
+}
+
+.hero.hero-detail {
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/hero-detail.jpg");
+}
+
+/* ĐÃ SỬA: Thêm keyframes animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   PAGE LAYOUT
+   ======================================== */
+main {
+  padding-top: 90px; /* ĐÃ SỬA: Thêm padding-top cho main */
+}
+
+section {
+  padding: 80px 10%;
+}
+
+section.intro {
+  background: var(--light-gray);
+  text-align: center;
+}
+
+section.light {
+  background: var(--light-gray);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem; /* ĐÃ SỬA: Tăng kích thước */
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--navy);
+  position: relative;
+  padding-bottom: 15px;
+}
+
+/* ĐÃ SỬA: Thêm underline cho h2 */
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--gold);
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+/* ========================================
+   GRID & CARDS
+   ======================================== */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* ĐÃ SỬA: Tăng min width */
+  gap: 35px; /* ĐÃ SỬA: Tăng gap */
+  margin-top: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px; /* ĐÃ SỬA: Tăng border-radius */
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08); /* ĐÃ SỬA: Tăng shadow */
+  transition: all 0.4s ease; /* ĐÃ SỬA: Tăng thời gian transition */
+  position: relative; /* ĐÃ SỬA: Thêm position */
+}
+
+.card::before {
+  /* ĐÃ SỬA: Thêm border gradient effect */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--navy));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-15px); /* ĐÃ SỬA: Tăng độ nâng */
+  box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 280px; /* ĐÃ SỬA: Tăng chiều cao */
+  object-fit: cover;
+  transition: transform 0.4s ease; /* ĐÃ SỬA: Thêm transition cho ảnh */
+  /* GHI CHÚ: Ảnh cho các card (điểm đến, tour, v.v.) */
+  /* - images/tuong-chua-kito.jpg */
+  /* - images/hai-dang.jpg */
+  /* - images/bai-sau.jpg */
+  /* - images/bai-truoc.jpg */
+  /* - images/hon-ba.jpg */
+  /* - images/long-hai.jpg */
+  /* - images/lang-be.jpg */
+  /* - images/suoi-nuoc-nong.jpg */
+  /* - images/cong-vien-tho.jpg */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* ĐÃ SỬA: Zoom ảnh khi hover */
+}
+
+.card-content {
+  padding: 25px; /* ĐÃ SỬA: Tăng padding */
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem; /* ĐÃ SỬA: Tăng kích thước */
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+
+.card p {
+  color: #666;
+  margin-bottom: 20px; /* ĐÃ SỬA: Tăng margin */
+  line-height: 1.8;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.btn-gold {
+  background: var(--gold);
+  border: none;
+  padding: 14px 35px; /* ĐÃ SỬA: Tăng padding */
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px; /* ĐÃ SỬA: Tăng font size */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(201, 162, 77, 0.3); /* ĐÃ SỬA: Thêm shadow */
+}
+
+.btn-gold:hover {
+  background: #b8923d;
+  transform: translateY(-3px); /* ĐÃ SỬA: Tăng độ nâng */
+  box-shadow: 0 6px 20px rgba(201, 162, 77, 0.4);
+}
+
+/* ========================================
+   VIDEO SECTION
+   ======================================== */
+.video-section {
+  background: var(--light-gray);
+}
+
+.video-container {
+  max-width: 1000px; /* ĐÃ SỬA: Tăng max-width */
+  margin: 0 auto;
+  border-radius: 16px; /* ĐÃ SỬA: Thêm border-radius */
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1); /* ĐÃ SỬA: Thêm shadow */
+}
+
+.video-container iframe {
+  border-radius: 16px;
+}
+
+.video-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   BREADCRUMB
+   ======================================== */
+.breadcrumb {
+  padding: 20px 10%;
+  background: var(--light-gray);
+  font-size: 0.95rem;
+}
+
+.breadcrumb a {
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--gold);
+}
+
+/* ========================================
+   DETAIL PAGE
+   ======================================== */
+.detail-page {
+  /* Không cần margin-top vì main đã có padding-top */
+}
+
+.detail-content {
+  max-width: 1000px; /* ĐÃ SỬA: Tăng max-width */
+  margin: 0 auto;
+  padding: 50px 20px; /* ĐÃ SỬA: Tăng padding */
+}
+
+.detail-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; /* ĐÃ SỬA: Tăng kích thước */
+  color: var(--navy);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.detail-content h2 {
+  font-size: 2rem; /* ĐÃ SỬA: Điều chỉnh kích thước */
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: left; /* ĐÃ SỬA: Căn trái */
+}
+
+.detail-content h2::after {
+  left: 0; /* ĐÃ SỬA: Underline căn trái */
+  transform: none;
+}
+
+.detail-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detail-content ul li {
+  padding: 12px 0 12px 30px; /* ĐÃ SỬA: Tăng padding */
+  position: relative;
+  line-height: 1.8;
+}
+
+.detail-content ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.detail-image {
+  margin: 40px 0; /* ĐÃ SỬA: Tăng margin */
+  text-align: center;
+}
+
+.detail-image img {
+  max-width: 100%;
+  border-radius: 16px; /* ĐÃ SỬA: Tăng border-radius */
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12); /* ĐÃ SỬA: Tăng shadow */
+  /* GHI CHÚ: Ảnh chi tiết cho các điểm đến */
+  /* - images/tuong-chua-view.jpg */
+  /* - images/tuong-chua-ban-dem.jpg */
+  /* (Và các ảnh khác cho từng điểm đến) */
+}
+
+.image-caption {
+  font-style: italic;
+  color: #666;
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+.cta-box {
+  background: var(--light-gray);
+  padding: 40px; /* ĐÃ SỬA: Tăng padding */
+  border-radius: 16px; /* ĐÃ SỬA: Tăng border-radius */
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* ĐÃ SỬA: Thêm shadow */
+}
+
+.cta-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px; /* ĐÃ SỬA: Tăng gap */
+  margin: 40px 0;
+  align-items: center;
+}
+
+.about-intro img {
+  width: 100%;
+  border-radius: 16px; /* ĐÃ SỬA: Tăng border-radius */
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  /* GHI CHÚ: Ảnh công ty - images/about-company.jpg */
+}
+
+.vision-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; /* ĐÃ SỬA: Tăng gap */
+  margin: 40px 0;
+}
+
+.vm-box {
+  background: var(--light-gray);
+  padding: 35px; /* ĐÃ SỬA: Tăng padding */
+  border-radius: 16px; /* ĐÃ SỬA: Tăng border-radius */
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.vm-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.core-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* ĐÃ SỬA: Tăng min width */
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.value-item {
+  background: white;
+  padding: 25px; /* ĐÃ SỬA: Tăng padding */
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+}
+
+.value-item h4 {
+  color: var(--navy);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  padding: 18px; /* ĐÃ SỬA: Tăng padding */
+  margin: 12px 0;
+  background: var(--light-gray);
+  border-radius: 10px;
+  border-left: 4px solid var(--gold); /* ĐÃ SỬA: Thêm border trái */
+  transition: all 0.3s ease;
+}
+
+.service-list li:hover {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transform: translateX(5px);
+}
+
+.partners {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* ========================================
+   CONTACT PAGE
+   ======================================== */
+.contact-section {
+  padding-top: 40px; /* ĐÃ SỬA: Giảm padding-top */
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px; /* ĐÃ SỬA: Tăng gap */
+  margin-bottom: 60px;
+}
+
+.contact-info h2,
+.contact-form-wrapper h2 {
+  color: var(--navy);
+  margin-bottom: 35px;
+  text-align: left;
+  font-size: 2.2rem;
+}
+
+.contact-info h2::after,
+.contact-form-wrapper h2::after {
+  left: 0;
+  transform: none;
+}
+
+.info-item {
+  margin-bottom: 35px; /* ĐÃ SỬA: Tăng margin */
+  padding: 20px; /* ĐÃ SỬA: Thêm padding */
+  background: var(--light-gray); /* ĐÃ SỬA: Thêm background */
+  border-radius: 10px;
+}
+
+.info-item h3 {
+  color: var(--gold);
+  font-size: 1.3rem; /* ĐÃ SỬA: Tăng font size */
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.info-item p {
+  line-height: 1.8;
+  color: #555;
+}
+
+.info-item a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600; /* ĐÃ SỬA: Thêm font weight */
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: var(--gold);
+}
+
+.contact-form {
+  background: white; /* ĐÃ SỬA: Thêm background */
+  padding: 30px; /* ĐÃ SỬA: Thêm padding */
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px; /* ĐÃ SỬA: Tăng padding */
+  margin-bottom: 20px;
+  border: 2px solid #e0e0e0; /* ĐÃ SỬA: Tăng độ dày border */
+  border-radius: 10px; /* ĐÃ SỬA: Tăng border-radius */
+  font-family: 'SVN-Gilroy', 'Inter', sans-serif;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 162, 77, 0.1);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  width: 100%; /* ĐÃ SỬA: Nút full width */
+  font-size: 16px;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.map-container {
+  margin-top: 60px;
+}
+
+.map-container h2 {
+  margin-bottom: 25px;
+}
+
+.map-container iframe {
+  border-radius: 16px; /* ĐÃ SỬA: Thêm border-radius */
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.map-note {
+  text-align: center;
+  margin-top: 15px;
+  font-style: italic;
+  color: #666;
+}
+
+/* ========================================
+   EXPERIENCE PAGE (KINH NGHIỆM)
+
+   ĐÃ SỬA: Thêm styles mới cho trang kinh nghiệm
+   ======================================== */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+}
+
+.experience-header {
+  padding: 30px 25px 20px 25px;
+  background: linear-gradient(135deg, var(--light-gray), white);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--gold);
+  /* GHI CHÚ: Avatar người dùng chia sẻ kinh nghiệm */
+  /* - images/avatar-1.jpg, avatar-2.jpg, etc. */
+}
+
+.user-details h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--navy);
+}
+
+.user-details .user-location {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+.trip-info {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.trip-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.experience-content {
+  padding: 25px;
+}
+
+.rating {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: var(--gold);
+}
+
+.experience-text {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid var(--gold);
+}
+
+.experience-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.experience-images img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  /* GHI CHÚ: Ảnh kinh nghiệm từ du khách */
+  /* - images/exp-1-1.jpg, exp-1-2.jpg, etc. */
+}
+
+.experience-images img:hover {
+  transform: scale(1.05);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  background: var(--light-gray);
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--navy);
+  border: 1px solid #ddd;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+  background: var(--navy);
+  color: white;
+  padding: 60px 10% 25px 10%; /* ĐÃ SỬA: Tăng padding */
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* ĐÃ SỬA: Tăng min width */
+  gap: 50px; /* ĐÃ SỬA: Tăng gap */
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.4rem; /* ĐÃ SỬA: Tăng font size */
+}
+
+.footer-section p {
+  margin: 10px 0;
+  line-height: 2; /* ĐÃ SỬA: Tăng line-height */
+  font-size: 0.95rem;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--gold);
+  padding-left: 5px; /* ĐÃ SỬA: Thêm hiệu ứng shift */
+}
+
+.social-links {
+  display: flex;
+  gap: 20px; /* ĐÃ SỬA: Tăng gap */
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  /* GHI CHÚ: Icon mạng xã hội */
+  /* - images/facebook-icon.png */
+  /* - images/zalo-icon.png */
+  /* - images/messenger-icon.png */
+}
+
+.social-links a:hover {
+  transform: scale(1.15); /* ĐÃ SỬA: Tăng scale */
+}
+
+.social-links img {
+  width: 36px; /* ĐÃ SỬA: Tăng kích thước */
+  height: 36px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15); /* ĐÃ SỬA: Làm đậm border */
+  padding-top: 25px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  opacity: 0.85; /* ĐÃ SỬA: Tăng opacity */
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 1024px) {
+  section {
+    padding: 60px 7%;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 12px 20px;
+    flex-wrap: wrap; /* ĐÃ SỬA: Cho phép wrap */
+  }
+  
+  .menu {
+    width: 100%; /* ĐÃ SỬA: Menu full width trên mobile */
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    margin: 5px 8px;
+    font-size: 13px;
+  }
+  
+  .hero {
+    padding-top: 140px; /* ĐÃ SỬA: Tăng padding cho mobile */
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-container,
+  .about-intro,
+  .vision-mission {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .grid-container,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    padding: 50px 5%;
+  }
+  
+  .detail-content {
+    padding: 30px 15px;
+  }
+  
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .logo-container h3 {
+    font-size: 1.1rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+  }
+  
+  .card img {
+    height: 220px;
+  }
+  
+  .btn-gold {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ĐÃ SỬA: Thêm các utility classes
+   ======================================== */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/* ========================================
+   LOADING ANIMATION
+   ĐÃ SỬA: Thêm loading cho images
+   ======================================== */
+img {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
