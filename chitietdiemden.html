@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi tiết điểm đến | Du lịch Vũng Tàu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- ĐÃ SỬA: Sử dụng CSS mới với font SVN-Gilroy -->
+  <link rel="stylesheet" href="style/css_updated.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ĐÃ THÊM: Styles cho navigation điểm đến */
+    .destination-nav {
+      position: sticky;
+      top: 90px;
+      background: white;
+      padding: 20px 10%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 50;
+      margin-bottom: 30px;
+    }
+    
+    .destination-nav h3 {
+      color: var(--navy);
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .nav-links a {
+      padding: 8px 16px;
+      background: var(--light-gray);
+      color: var(--navy);
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-links a:hover,
+    .nav-links a.active {
+      background: var(--gold);
+      color: white;
+    }
+    
+    .destination-section {
+      scroll-margin-top: 180px;
+      padding: 40px 0;
+      border-bottom: 2px solid var(--light-gray);
+    }
+    
+    .destination-section:last-child {
+      border-bottom: none;
+    }
+    .destination-section {
+      display: none;
+}
+
+  </style>
+</head>
+<body>
+
+<!-- ĐÃ SỬA: Header sát trên cùng -->
+<header>
+  <div class="logo-container">
+    <!-- GHI CHÚ: Logo tại images/logo.png -->
+    <img class="logo-img" src="images/logo.png" alt="Logo Du lịch Vũng Tàu"/>
+    <h3>Du lịch Vũng Tàu</h3>
+  </div>
+  <nav class="menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="diem_den.html">Điểm đến</a>
+    <a href="lich_trinh.html">Lịch trình</a>
+    <a href="kinhnghiem.html">Kinh nghiệm</a>
+    <a href="lienhe.html">Liên hệ</a>
+    <a href="dangnhap.html" class="cta">ĐĂNG NHẬP</a>
+  </nav>
+</header>
+
+<main class="detail-page">
+  <section class="breadcrumb">
+    <p><a href="index.html">Trang chủ</a> › <a href="diem_den.html">Điểm đến</a> › Chi tiết các điểm đến</p>
+  </section>
+
+  <!-- ĐÃ THÊM: Navigation nhanh cho các điểm đến -->
+  <div class="destination-nav">
+    <h3>🗺️ Chọn điểm đến:</h3>
+    <div class="nav-links">
+      <a href="chitietdiemden.html?place=tuong-chua">Tượng Chúa Kitô</a>
+      <a href="chitietdiemden.html?place=hai-dang">Hải Đăng</a>
+      <a href="chitietdiemden.html?place=bai-sau">Bãi Sau</a>
+      <a href="chitietdiemden.html?place=bai-truoc">Bãi Trước</a>
+	  <a href="chitietdiemden.html?place=hon-ba">Hòn Bà</a>
+	  <a href="chitietdiemden.html?place=long-hai">Long Hải</a>
+	  <a href="chitietdiemden.html?place=lang-be">Làng Bè</a>
+      <a href="chitietdiemden.html?place=suoi-nuoc-nong">Suối Nước Nóng</a>
+	  <a href="chitietdiemden.html?place=cong-vien-tho">Công Viên Thỏ Trắng</a>
+    </div>
+  </div>
+
+  <section class="detail-content">
+    
+    <!-- ========== 1. TƯỢNG CHÚA KITÔ VUA ========== -->
+    <div id="tuong-chua" class="destination-section">
+      <h1>1. Tượng Chúa Kitô Vua</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/tuong-chua-kito.jpg -->
+        <img src="images/tuong-chua-kito.jpg" alt="Tượng Chúa Kitô Vua Vũng Tàu"/>
+        <p class="image-caption">Tượng Chúa Kitô Vua nhìn từ xa</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Tượng Chúa Kitô Vua là một trong những biểu tượng nổi tiếng nhất của thành phố Vũng Tàu. 
+        Tọa lạc trên đỉnh núi Nhỏ cao 170m so với mực nước biển, tượng có chiều cao 32m với hai cánh tay 
+        dang rộng 18,4m, được xây dựng từ năm 1974.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Kiến trúc độc đáo:</strong> Tượng cao 32m, đứng thứ 2 thế giới về tượng Chúa Kitô cao nhất</li>
+        <li><strong>View 360 độ:</strong> Ngắm toàn cảnh thành phố và biển cả bao la</li>
+        <li><strong>Hành trình leo núi:</strong> 847 bậc thang dẫn lên đỉnh</li>
+        <li><strong>Hoàng hôn tuyệt đẹp:</strong> Thời điểm đẹp nhất để chụp ảnh</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Núi Nhỏ, Phường 8, TP. Vũng Tàu</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> 7:00 - 17:00 hàng ngày</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> Miễn phí</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> 1.5 - 2.5 giờ</p>
+      </div>
+    </div>
+
+    <!-- ========== 2. NGỌN HẢI ĐĂNG ========== -->
+    <div id="hai-dang" class="destination-section">
+      <h1>2. Ngọn Hải Đăng</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/hai-dang.jpg -->
+        <img src="images/hai-dang.jpg" alt="Ngọn Hải Đăng Vũng Tàu"/>
+        <p class="image-caption">Ngọn Hải Đăng cổ kính trên núi Nhỏ</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Ngọn Hải Đăng Vũng Tàu được xây dựng từ năm 1910, là một trong những hải đăng cổ nhất Đông Nam Á. 
+        Tọa lạc trên đỉnh núi Nhỏ, cao 18m, hải đăng vẫn đang hoạt động và là địa điểm du lịch hấp dẫn.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Lịch sử lâu đời:</strong> Được xây dựng từ thời Pháp thuộc (1910)</li>
+        <li><strong>Kiến trúc cổ điển:</strong> Phong cách kiến trúc Pháp độc đáo</li>
+        <li><strong>View hoàng hôn:</strong> Điểm ngắm hoàng hôn đẹp nhất Vũng Tàu</li>
+        <li><strong>Check-in lý tưởng:</strong> Background cực đẹp cho ảnh du lịch</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Núi Nhỏ, Phường 2, TP. Vũng Tàu</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> 7:00 - 18:00 hàng ngày</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> 10.000đ/người</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> 1 - 1.5 giờ</p>
+      </div>
+    </div>
+
+    <!-- ========== 3. BÃI SAU (THÙY VÂN) ========== -->
+    <div id="bai-sau" class="destination-section">
+      <h1>3. Bãi Sau (Thùy Vân)</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/bai-sau.jpg -->
+        <img src="images/bai-sau.jpg" alt="Bãi Sau Vũng Tàu"/>
+        <p class="image-caption">Bãi Sau - Bãi biển dài và phẳng lặng</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Bãi Sau hay còn gọi là bãi Thùy Vân, là bãi biển dài nhất Vũng Tàu với chiều dài khoảng 10km. 
+        Bờ biển phẳng lặng, cát trắng mịn, là nơi lý tưởng để tắm biển và nghỉ dưỡng.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Bãi biển dài nhất:</strong> Kéo dài 10km dọc ven biển</li>
+        <li><strong>Sóng êm ái:</strong> Thích hợp cho gia đình có trẻ nhỏ</li>
+        <li><strong>Nhiều resort:</strong> Hệ thống khách sạn, resort cao cấp</li>
+        <li><strong>Hoạt động thể thao:</strong> Lướt ván, môtô nước, dù bay</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Đường Thùy Vân, TP. Vũng Tàu</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> Cả ngày</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> Miễn phí</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> 2 - 4 giờ</p>
+      </div>
+    </div>
+
+    <!-- ========== 4. BÃI TRƯỚC (MULBERRY BEACH) ========== -->
+    <div id="bai-truoc" class="destination-section">
+      <h1>4. Bãi Trước (Mulberry Beach)</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/bai-truoc.jpg -->
+        <img src="images/bai-truoc.jpg" alt="Bãi Trước Vũng Tàu"/>
+        <p class="image-caption">Bãi Trước - Bãi biển đẹp nhất Vũng Tàu</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Bãi Trước được mệnh danh là bãi biển đẹp nhất Vũng Tàu với nước biển trong xanh, 
+        cát trắng mịn và hàng cây xanh mát ven bờ. Đây là nơi lý tưởng để tắm biển và thư giãn.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Nước trong xanh:</strong> Chất lượng nước tốt nhất Vũng Tàu</li>
+        <li><strong>Cát trắng mịn:</strong> Mềm mại, sạch sẽ</li>
+        <li><strong>Cây xanh mát:</strong> Hàng cây dầu bóng mát ven biển</li>
+        <li><strong>Nhiều dịch vụ:</strong> Nhà hàng, quán café view biển</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Đường Quang Trung, TP. Vũng Tàu</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> Cả ngày</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> Miễn phí</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> 2 - 3 giờ</p>
+      </div>
+    </div>
+
+    <!-- ========== 5. HÒN BÀ (BÃI DỨA) ========== -->
+    <div id="hon-ba" class="destination-section">
+      <h1>5. Hòn Bà (Bãi Dứa)</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/hon-ba.jpg -->
+        <img src="images/hon-ba.jpg" alt="Hòn Bà Vũng Tàu"/>
+        <p class="image-caption">Hòn Bà - Bãi biển hoang sơ, yên bình</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Hòn Bà hay Bãi Dứa là điểm đến hoang sơ, yên tĩnh dành cho những ai muốn tìm kiếm 
+        không gian riêng tư xa rời sự ồn ào của thành phố. Bãi biển còn rất nguyên sơ.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Hoang sơ tự nhiên:</strong> Ít bị khai thác du lịch</li>
+        <li><strong>Yên tĩnh:</strong> Ít du khách, không gian riêng tư</li>
+        <li><strong>Nước trong xanh:</strong> Chất lượng nước tuyệt vời</li>
+        <li><strong>Đá tảng độc đáo:</strong> Phong cảnh thiên nhiên đẹp</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Phường Nguyễn An Ninh, TP. Vũng Tàu</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> Cả ngày</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> Miễn phí</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> 2 - 3 giờ</p>
+      </div>
+    </div>
+
+    <!-- ========== 6. BIỂN LONG HẢI ========== -->
+    <div id="long-hai" class="destination-section">
+      <h1>6. Biển Long Hải</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/long-hai.jpg -->
+        <img src="images/long-hai.jpg" alt="Biển Long Hải"/>
+        <p class="image-caption">Biển Long Hải - Bãi biển hoang sơ, ít người</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Biển Long Hải thuộc huyện Long Điền, cách trung tâm Vũng Tàu khoảng 20km. 
+        Đây là bãi biển hoang sơ với nước trong xanh, ít du khách, lý tưởng cho nghỉ dưỡng.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Hoang sơ:</strong> Chưa bị khai thác du lịch quá mức</li>
+        <li><strong>Nước trong:</strong> Rất sạch và trong xanh</li>
+        <li><strong>Ít người:</strong> Yên tĩnh, thích hợp nghỉ dưỡng</li>
+        <li><strong>Giá rẻ:</strong> Chi phí ăn uống, lưu trú hợp lý</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Huyện Long Điền, Bà Rịa - Vũng Tàu</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> Cả ngày</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> Miễn phí</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> Nửa ngày - 1 ngày</p>
+      </div>
+    </div>
+
+    <!-- ========== 7. LÀNG BÈ LONG SƠN ========== -->
+    <div id="lang-be" class="destination-section">
+      <h1>7. Làng Bè Long Sơn</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/lang-be.jpg -->
+        <img src="images/lang-be.jpg" alt="Làng Bè Long Sơn"/>
+        <p class="image-caption">Làng Bè - Vựa hải sản tươi sống</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Làng Bè Long Sơn là vựa hải sản tươi sống nổi tiếng của Vũng Tàu. 
+        Du khách có thể trải nghiệm đời sống ngư dân chân thật và thưởng thức hải sản tươi ngon.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Hải sản tươi sống:</strong> Đa dạng, giá rẻ</li>
+        <li><strong>Trải nghiệm văn hóa:</strong> Đời sống ngư dân chân thật</li>
+        <li><strong>Chụp ảnh đẹp:</strong> Bè cá, thuyền đánh cá</li>
+        <li><strong>Mua hải sản:</strong> Mang về làm quà</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Phường Long Sơn, TP. Vũng Tàu</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> Sáng sớm 5:00 - 10:00 (tốt nhất)</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> Miễn phí (chỉ trả tiền hải sản)</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> 1 - 2 giờ</p>
+      </div>
+    </div>
+
+    <!-- ========== 8. SUỐI NƯỚC NÓNG MINERA BÌNH CHÂU ========== -->
+    <div id="suoi-nuoc-nong" class="destination-section">
+      <h1>8. Suối Nước Nóng Minera Bình Châu</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/suoi-nuoc-nong.jpg -->
+        <img src="images/suoi-nuoc-nong.jpg" alt="Suối Nước Nóng Bình Châu"/>
+        <p class="image-caption">Suối nước nóng - Thư giãn trong không gian xanh mát</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Suối Nước Nóng Minera Bình Châu nằm trong khu du lịch sinh thái, cách Vũng Tàu khoảng 60km. 
+        Nơi đây có suối nước nóng tự nhiên 82°C, khoáng chất tốt cho sức khỏe.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Nước khoáng nóng:</strong> Nhiệt độ 82°C, giàu khoáng chất</li>
+        <li><strong>Tắm bùn khoáng:</strong> Dịch vụ spa tự nhiên</li>
+        <li><strong>Rừng nhiệt đới:</strong> Không gian xanh mát</li>
+        <li><strong>Resort nghỉ dưỡng:</strong> Tiện nghi đầy đủ</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Xã Bình Châu, huyện Xuyên Mộc, BR-VT</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> 7:00 - 17:00 hàng ngày</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> 120.000đ - 200.000đ/người</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> Nửa ngày - 1 ngày</p>
+      </div>
+    </div>
+
+    <!-- ========== 9. CÔNG VIÊN THỎ TRẮNG ========== -->
+    <div id="cong-vien-tho" class="destination-section">
+      <h1>9. Công Viên Thỏ Trắng</h1>
+      
+      <div class="detail-image">
+        <!-- GHI CHÚ: images/cong-vien-tho.jpg -->
+        <img src="images/cong-vien-tho.jpg" alt="Công Viên Thỏ Trắng"/>
+        <p class="image-caption">Công Viên Thỏ Trắng - Điểm vui chơi cho gia đình</p>
+      </div>
+
+      <h2>Giới thiệu chung</h2>
+      <p style="font-size: 1.1rem; line-height: 1.9;">
+        Công Viên Thỏ Trắng là điểm vui chơi lý tưởng cho gia đình có trẻ nhỏ. 
+        Công viên có không gian xanh mát, nhiều trò chơi và động vật dễ thương.
+      </p>
+
+      <h2>Điểm đặc biệt</h2>
+      <ul>
+        <li><strong>Thích hợp trẻ em:</strong> Nhiều trò chơi an toàn</li>
+        <li><strong>Động vật dễ thương:</strong> Thỏ, nai, dê...</li>
+        <li><strong>Không gian xanh:</strong> Cây cối, hoa lá</li>
+        <li><strong>Giá rẻ:</strong> Phù hợp mọi gia đình</li>
+      </ul>
+
+      <h2>Thông tin tham quan</h2>
+      <div style="background: var(--light-gray); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <p style="margin: 10px 0;"><strong>📍 Địa chỉ:</strong> Đường Thi Sách, Phường 2, TP. Vũng Tàu</p>
+        <p style="margin: 10px 0;"><strong>🕐 Giờ mở cửa:</strong> 7:00 - 18:00 hàng ngày</p>
+        <p style="margin: 10px 0;"><strong>💰 Giá vé:</strong> 20.000đ - 30.000đ/người</p>
+        <p style="margin: 10px 0;"><strong>⏱️ Thời gian tham quan:</strong> 2 - 3 giờ</p>
+      </div>
+    </div>
+
+    <!-- ========== CTA BOX ========== -->
+    <div class="cta-box" style="margin-top: 60px;">
+      <h3>Đặt tour tham quan ngay</h3>
+      <p>Liên hệ với chúng tôi để được tư vấn lịch trình chi tiết và đặt tour tham quan các điểm đến tại Vũng Tàu</p>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+        <a href="lienhe.html" class="btn-gold">Liên hệ tư vấn</a>
+        <a href="diem_den.html" class="btn-gold" style="background: var(--navy);">Quay lại danh sách</a>
+      </div>
+    </div>
+
+  </section>
+
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Công ty Du lịch Vũng Tàu</h3>
+      <p>📍 123 Đường Thùy Vân, Phường Thắng Tam, TP. Vũng Tàu</p>
+      <p>📞 Hotline: <a href="tel:02541234567">0254.123.4567</a></p>
+      <p>✉️ Email: <a href="/cdn-cgi/l/email-protection#c0a9aea6af80a4b5aca9a3a8b6b5aea7b4a1b5eeb6ae"><span class="__cf_email__" data-cfemail="c0a9aea6af80a4b5aca9a3a8b6b5aea7b4a1b5eeb6ae">[email&#160;protected]</span></a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Liên kết nhanh</h3>
+      <p><a href="gioithieu.html">Giới thiệu</a></p>
+      <p><a href="diem_den.html">Điểm đến</a></p>
+      <p><a href="kinhnghiem.html">Kinh nghiệm</a></p>
+      <p><a href="lienhe.html">Liên hệ</a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Kết nối với chúng tôi</h3>
+      <div class="social-links" style="display: flex; flex-direction: column; gap: 12px;">
+        <p style="margin: 0; display: flex; align-items: center; gap: 10px;">
+          <a href="https://www.facebook.com/groups/vungtau/" style="display: flex; align-items: center;">
+            <img src="images/facebook-icon.png" alt="Facebook" style="width: 24px; height: 24px;">
+          </a>
+          <span>Facebook</span>
+        </p>
+        <p style="margin: 0; display: flex; align-items: center; gap: 10px;">
+          <a href="https://www.messenger.com/t/110119428061395" style="display: flex; align-items: center;">
+            <img src="images/messenger-icon.png" alt="Messenger" style="width: 24px; height: 24px;">
+          </a>
+          <span>Messenger</span>
+        </p>
+        <p style="margin: 0; display: flex; align-items: center; gap: 10px;">
+          <a href="#" style="display: flex; align-items: center;">
+            <img src="images/zalo-icon.png" alt="Zalo" style="width: 24px; height: 24px;">
+          </a>
+          <span>Zalo: 0968 0088 37</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2026 Công ty TNHH Du lịch Vũng Tàu&nbsp; . Giấy phép kinh doanh số: 0123456789</p>
+    <p>Bản quyền nội dung thuộc về Du lịch Vũng Tàu. Mọi hành vi sao chép đều bị nghiêm cấm.</p>
+  </div>
+</footer>
+
+
+<script>
+// ĐÃ THÊM: Active state cho navigation
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = document.querySelectorAll('.destination-section');
+  
+  // Highlight active section khi scroll
+  window.addEventListener('scroll', () => {
+    let current = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 200;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+   
+<script src="scripts/taitrang.js"></script>
+	<script>
+  // Lấy tham số place từ URL
+  const params = new URLSearchParams(window.location.search);
+  const place = params.get('place');
+
+  // Ẩn tất cả địa danh
+  document.querySelectorAll('.destination-section').forEach(section => {
+    section.style.display = 'none';
+  });
+
+  // Nếu có place → chỉ hiện đúng địa danh đó
+  if (place) {
+    const activeSection = document.getElementById(place);
+    if (activeSection) {
+      activeSection.style.display = 'block';
+      activeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+

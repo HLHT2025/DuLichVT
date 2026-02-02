@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kinh nghiệm du lịch | Du lịch Vũng Tàu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- ĐÃ SỬA: Sử dụng CSS mới với font SVN-Gilroy -->
+  <link rel="stylesheet" href="style/css_updated.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ĐÃ SỬA: Header sát trên cùng -->
+<header>
+  <div class="logo-container">
+    <!-- GHI CHÚ: Logo tại images/logo.png -->
+    <img class="logo-img" src="images/logo.png" alt="Logo Du lịch Vũng Tàu"/>
+    <h3>Du lịch Vũng Tàu</h3>
+  </div>
+  <nav class="menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="diem_den.html">Điểm đến</a>
+    <a href="lich_trinh.html">Lịch trình</a>
+    <a href="kinhnghiem.html">Kinh nghiệm</a>
+    <a href="lienhe.html">Liên hệ</a>
+    <a href="dangnhap.html" class="cta" id="loginBtn">ĐĂNG NHẬP</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero small hero-experience">
+    <!-- GHI CHÚ: Ảnh hero cho trang kinh nghiệm - images/kinhnghiem-hero.jpg -->
+    <div class="hero-content">
+      <h1>Kinh nghiệm từ du khách</h1>
+      <p>Những chia sẻ chân thực từ những người đã đến Vũng Tàu</p>
+    </div>
+  </section>
+
+  <!-- ĐÃ SỬA: Phần giới thiệu -->
+  <section class="intro">
+    <h2>Cảm nhận thật từ trái tim</h2>
+    <p style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
+      Chúng tôi đã phỏng vấn hàng trăm du khách đã trải nghiệm Vũng Tàu. 
+      Dưới đây là những câu chuyện, kinh nghiệm và lời khuyên chân thành nhất từ họ. 
+      Hi vọng sẽ giúp bạn có một chuyến đi tuyệt vời!
+    </p>
+  </section>
+
+  <!-- ĐÃ SỬA: Grid hiển thị các kinh nghiệm -->
+  <section style="padding: 60px 10%;">
+    <div class="experience-grid">
+      
+      <!-- KINH NGHIỆM 1: Cặp đôi trẻ -->
+      <article class="experience-card">
+        <div class="experience-header">
+          <div class="user-info">
+            <!-- GHI CHÚ: Avatar người dùng - images/avatar-1.jpg -->
+            <img src="images/hinhdaidien/nam2.png" alt="Minh Anh" class="user-avatar"/>
+            <div class="user-details">
+              <h3>Minh Anh & Tuấn Kiệt</h3>
+              <p class="user-location">📍 TP. Hồ Chí Minh</p>
+            </div>
+          </div>
+          <div class="trip-info">
+            <span>🗓️ Tháng 12/2025</span>
+            <span>⏱️ 2N1Đ</span>
+          </div>
+        </div>
+        
+        <div class="experience-content">
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="experience-text">
+            "Chuyến đi Vũng Tàu 2 ngày 1 đêm của chúng mình thật tuyệt vời! Chúng mình đi từ Sài Gòn bằng xe máy, 
+            khoảng 2 giờ là đến. Điểm đến ấn tượng nhất là Tượng Chúa Kitô  - view từ trên đó đẹp không thể tả! 
+            Buổi tối đi dạo Bãi Trước, ăn hải sản tươi ngon, giá cả hợp lý. Buổi sáng thức dậy sớm đi Hải Đăng 
+          ngắm bình minh cực kỳ lãng mạn. Chúng mình sẽ quay lại chắc chắn!" </div>
+          
+          <!-- GHI CHÚ: Ảnh kinh nghiệm từ du khách 1 -->
+          <!-- - images/exp-1-1.jpg, exp-1-2.jpg, exp-1-3.jpg -->
+          <div class="experience-images">
+            <img src="images/exp-1-1.jpg" alt="Ảnh 1 từ Minh Anh"/>
+            <img src="images/kinh-nghiem-di-vung-tau-2-nguoi-tu-sai-gon-7.png" alt="Ảnh 2 từ Minh Anh"/>
+            <img src="images/Tuong-dai-Chua-Kito-Vua-15.jpg" alt="Ảnh 3 từ Minh Anh"/>
+            <img src="images/vung-tau-ve-dem-8.jpg" alt="Ảnh 4 từ Minh Anh"/>
+          </div>
+          
+          <div class="tags">
+            <span class="tag">#Cặpđôi</span>
+            <span class="tag">#2N1Đ</span>
+            <span class="tag">#Xemáy</span>
+            <span class="tag">#Lãngmạn</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- KINH NGHIỆM 2: Gia đình có con nhỏ -->
+      <article class="experience-card">
+        <div class="experience-header">
+          <div class="user-info">
+            <!-- GHI CHÚ: Avatar - images/avatar-2.jpg -->
+            <img src="images/hinhdaidien/nu1.png" alt="Chị Hương" class="user-avatar" />
+            <div class="user-details">
+              <h3>Chị Phương Hương</h3>
+              <p class="user-location">📍 Hà Nội</p>
+            </div>
+          </div>
+          <div class="trip-info">
+            <span>🗓️ Tháng 10/2025</span>
+            <span>⏱️ 3N2Đ</span>
+          </div>
+        </div>
+        
+        <div class="experience-content">
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="experience-text">
+            "Gia đình 4 người (2 vợ chồng + 2 con 5 và 8 tuổi) bay từ Hà Nội xuống nghỉ 3 ngày 2 đêm. 
+            Chúng tôi ở resort gần Bãi Sau, view biển rất đẹp. Con nhỏ thích nhất là Công Viên Thỏ Trắng - 
+            nhiều hoạt động vui chơi, an toàn. Bãi Sau sóng nhỏ, nước êm, rất thích hợp cho trẻ em tắm biển. 
+            Tối đi chợ đêm mua đồ lưu niệm, ăn bánh khọt, bánh căn ngon tuyệt! Đi Vũng Tàu với gia đình rất 
+            thoải mái vì mọi thứ đều gần gũi, dễ tiếp cận."
+          </div>
+          
+          <!-- GHI CHÚ: Ảnh kinh nghiệm 2 - images/exp-2-*.jpg -->
+          <div class="experience-images">
+            <img src="images/cong_vien_tho_trang_vung_tau_04.jpg" alt="Ảnh 1 từ chị Hương"/>
+            <img src="images/IMG_5472-scaled.jpg" alt="Ảnh 2 từ chị Hương"/>
+            <img src="images/nguon-goc-banh-khot-tai-vung-tau.jpg" alt="Ảnh 3 từ chị Hương"/>
+          </div>
+          
+          <div class="tags">
+            <span class="tag">#Giađình</span>
+            <span class="tag">#3N2Đ</span>
+            <span class="tag">#Trẻem</span>
+            <span class="tag">#Resort</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- KINH NGHIỆM 3: Nhóm bạn trẻ -->
+      <article class="experience-card">
+        <div class="experience-header">
+          <div class="user-info">
+            <!-- GHI CHÚ: Avatar - images/avatar-3.jpg -->
+            <img src="images/hinhdaidien/nam2.png" alt="Đức Mạnh" class="user-avatar"/>
+            <div class="user-details">
+              <h3>Đức Mạnh & hội bạn</h3>
+              <p class="user-location">📍 Đà Nẵng</p>
+            </div>
+          </div>
+          <div class="trip-info">
+            <span>🗓️ Tháng 8/2025</span>
+            <span>⏱️ 2N1Đ</span>
+          </div>
+        </div>
+        
+        <div class="experience-content">
+          <div class="rating">⭐⭐⭐⭐</div>
+          <div class="experience-text">
+            "Nhóm 6 người bạn thân bay từ Đà Nẵng xuống. Mục tiêu chính là party và khám phá! 
+            Ngày 1: Check-in homestay xinh xắn trung tâm, chiều đi Bãi Dứa (Hòn Bà) - hoang sơ, 
+            đẹp tự nhiên nhưng đường hơi khó đi. Tối ăn Buffet hải sản ở Làng Bè, tươi ngon giá rẻ bất ngờ. 
+            Ngày 2: Sáng leo Tượng Chúa (mệt phát chết nhưng view đáng giá!), trưa ăn bánh canh chả cá, 
+            chiều relax ở Bãi Trước. Lưu ý: Cuối tuần khá đông, book chỗ trước nhé!" </div>
+          
+          <!-- GHI CHÚ: Ảnh kinh nghiệm 3 - images/exp-3-*.jpg -->
+          <div class="experience-images">
+            <img src="images/homestay-vung-tau-2.jpg" alt="Ảnh 1 từ Đức Mạnh"/>
+            <img src="images/hon-ba-vung-tau-5.jpg" alt="Ảnh 2 từ Đức Mạnh"/>
+            <img src="images/buffet-hai-san-vung-tau.jpg" alt="Ảnh 3 từ Đức Mạnh"/>
+            <img src="images/bai-truoc6.jpg" alt="Ảnh 4 từ Đức Mạnh"/>
+          </div>
+          
+          <div class="tags">
+            <span class="tag">#Nhómbạn</span>
+            <span class="tag">#Homestay</span>
+            <span class="tag">#Hảisản</span>
+            <span class="tag">#Checkin</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- KINH NGHIỆM 4: Du khách nước ngoài -->
+      <article class="experience-card">
+        <div class="experience-header">
+          <div class="user-info">
+            <!-- GHI CHÚ: Avatar - images/avatar-4.jpg -->
+            <img src="images/hinhdaidien/nu2.png" alt="Sarah" class="user-avatar"/>
+            <div class="user-details">
+              <h3>Sarah Thompson</h3>
+              <p class="user-location">📍 Australia</p>
+            </div>
+          </div>
+          <div class="trip-info">
+            <span>🗓️ November 2025</span>
+            <span>⏱️ 3 days</span>
+          </div>
+        </div>
+        
+        <div class="experience-content">
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="experience-text">
+            "Vung Tau was a pleasant surprise! I came here for a short beach break from Ho Chi Minh City. 
+            The Christ Statue is impressive with stunning panoramic views - reminded me of Rio! 
+            The seafood is incredibly fresh and affordable. I loved the laid-back vibe of Front Beach. 
+            The lighthouse at sunset is a must-see. People are friendly and helpful even with language barriers. 
+            Tip: Download translation app and bring cash as many places don't take cards. 
+            Would definitely recommend for anyone wanting authentic Vietnamese coastal experience!"
+          </div>
+          
+          <!-- GHI CHÚ: Ảnh kinh nghiệm 4 - images/exp-4-*.jpg -->
+          <div class="experience-images">
+            <img src="images/4-tuong-chua-kito.jpeg" alt="Photo 1 from Sarah"/>
+            <img src="images/bc69d771-bai-truoc-vung-tau-11.jpg" alt="Photo 2 from Sarah"/>
+            <img src="images/diem-danh-5-cho-hai-san-vung-tau-tuoi-ngon-sieu-re-ve-sinh-202202190737492555.jpg" alt="Photo 3 from Sarah"/>
+            <img src="images/Ngon-hai-dang-Vung-Tau.jpg" alt="Photo 4 from Sarah"/>
+          </div>
+          
+          <div class="tags">
+            <span class="tag">#SoloTravel</span>
+            <span class="tag">#Backpacker</span>
+            <span class="tag">#Authentic</span>
+            <span class="tag">#Budget</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- KINH NGHIỆM 5: Người cao tuổi -->
+      <article class="experience-card">
+        <div class="experience-header">
+          <div class="user-info">
+            <!-- GHI CHÚ: Avatar - images/avatar-5.jpg -->
+            <img src="images/hinhdaidien/nu1.png" alt="Cô Lan" class="user-avatar"/>
+            <div class="user-details">
+              <h3>Cô  Lan&nbsp;Johnson</h3>
+              <p class="user-location">📍 Cần Thơ</p>
+            </div>
+          </div>
+          <div class="trip-info">
+            <span>🗓️ Tháng 9/2025</span>
+            <span>⏱️ 4N3Đ</span>
+          </div>
+        </div>
+        
+        <div class="experience-content">
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="experience-text">
+            "Vợ chồng tôi 68 tuổi đi du lịch Vũng Tàu lần đầu. Ban đầu lo lắng về sức khỏe nhưng thực tế 
+            rất thoải mái. Chúng tôi ở khách sạn gần Bãi Trước, đi bộ ra biển chỉ 5 phút. Buổi sáng dậy sớm 
+            đi bộ ven biển hít thở không khí trong lành. Trưa nghỉ ngơi, chiều đi tham quan các điểm gần. 
+            Tượng Chúa thì thuê xe ôm lên để không phải leo bộ. Người Vũng Tàu rất thân thiện, nhiệt tình. 
+            Đồ ăn ngon, giá cả phải chăng. Chúng tôi đã có kỳ nghỉ thư giãn tuyệt vời!"
+          </div>
+          
+          <!-- GHI CHÚ: Ảnh kinh nghiệm 5 - images/exp-5-*.jpg -->
+          <div class="experience-images">
+            <img src="images/khach-s-n-palace.jpg" alt="Ảnh 1 từ cô Lan"/>
+            <img src="images/ba-ria-vung-tau-17035249729052141766558.jpg" alt="Ảnh 2 từ cô Lan"/>
+            <img src="images/photo-1-16616449637611305085708.jpeg" alt="Ảnh 3 từ cô Lan"/>
+          </div>
+          
+          <div class="tags">
+            <span class="tag">#Ngườicaotuổi</span>
+            <span class="tag">#Thưgiãn</span>
+            <span class="tag">#4N3Đ</span>
+            <span class="tag">#Antoàn</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- KINH NGHIỆM 6: Weekend getaway -->
+      <article class="experience-card">
+        <div class="experience-header">
+          <div class="user-info">
+            <!-- GHI CHÚ: Avatar - images/avatar-6.jpg -->
+            <img src="images/hinhdaidien/nam2.png" alt="Trí Dũng" class="user-avatar"/>
+            <div class="user-details">
+              <h3>Trí Dũng</h3>
+              <p class="user-location">📍 TP. Hồ Chí Minh</p>
+            </div>
+          </div>
+          <div class="trip-info">
+            <span>🗓️ Tháng 11/2025</span>
+            <span>⏱️ 1 ngày</span>
+          </div>
+        </div>
+        
+        <div class="experience-content">
+          <div class="rating">⭐⭐⭐⭐</div>
+          <div class="experience-text">
+            "Chuyến đi 1 ngày từ Sài Gòn - perfect cho weekend! Sáng 6h xuất phát, 8h đến Vũng Tàu. 
+            Lịch trình: Ăn sáng bánh mì Hạnh Phúc → Tượng Chúa (9h-11h) → Bãi Trước tắm biển (11h-13h) 
+            → Ăn trưa hải sản Bà Rịa (13h-14h) → Hải Đăng chụp hình (14h-15h) → Về Sài Gòn (16h). 
+            Chi phí khoảng 500k/người (xăng + ăn uống + vé vào cửa). Lưu ý: Xuất phát sớm để tránh nắng 
+            và kẹt xe. Mang đồ bơi, kem chống nắng. Route này vừa đủ không quá vội!"
+          </div>
+          
+          <!-- GHI CHÚ: Ảnh kinh nghiệm 6 - images/exp-6-*.jpg -->
+          <div class="experience-images">
+            <img src="images/banh-mi-chao-31-tu-xuong-vung-tau.jpg" alt="Ảnh 1 từ Trí Dũng"/>
+            <img src="images/bai-truoc-vung-tau-4.jpg" alt="Ảnh 2 từ Trí Dũng"/>
+            <img src="images/du-khach-tham-quan-hai-dang-thanh-pho-vung-tau.jpg" alt="Ảnh 3 từ Trí Dũng"/>
+            <img src="images/tuong-chua-kito-vua-vung-tau-6.jpg" alt="Ảnh 4 từ Trí Dũng"/>
+          </div>
+          
+          <div class="tags">
+            <span class="tag">#1ngày</span>
+            <span class="tag">#Weekend</span>
+            <span class="tag">#Giárẻ</span>
+            <span class="tag">#SàiGòn</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ĐÃ SỬA: Phần tips chung -->
+  <section style="background: var(--light-gray); padding: 60px 10%;">
+    <h2>Tổng hợp kinh nghiệm vàng</h2>
+    <div style="max-width: 1000px; margin: 40px auto;">
+      <div class="core-values">
+        <div class="value-item">
+          <h4>🚗 Di chuyển</h4>
+          <p><strong>Từ Sài Gòn:</strong> Xe máy (2h), xe khách (2.5h), hoặc ô tô riêng (2h). Giá xe khách 100-150k/người.</p>
+          <p><strong>Trong thành phố:</strong> Xe máy thuận tiện nhất. Grab/Xanh SM rất phổ biến.</p>
+        </div>
+        
+        <div class="value-item">
+          <h4>🏨 Chỗ ở</h4>
+          <p><strong>Budget:</strong> Homestay 150-300k/đêm (có breakfast).</p>
+          <p><strong>Mid-range:</strong> Khách sạn 3 sao 400-800k/đêm (view biển).</p>
+          <p><strong>Luxury:</strong> Resort 1.5-5 triệu/đêm (all services).</p>
+        </div>
+        
+        <div class="value-item">
+          <h4>🍽️ Ăn uống</h4>
+          <p><strong>Must-try:</strong> Bánh khọt, bánh căn, lẩu cá đuối, hải sản tươi.</p>
+          <p><strong>Khu vực:</strong> Làng Bè (hải sản rẻ), Bãi Trước (view đẹp), chợ đêm (đa dạng).</p>
+        </div>
+        
+        <div class="value-item">
+          <h4>📅 Thời gian đi</h4>
+          <p><strong>Tốt nhất:</strong> Tháng 11-Tháng 4 (khô ráo, mát mẻ).</p>
+          <p><strong>Tránh:</strong> Tháng 7-8 (mưa nhiều), ngày lễ lớn (đông người, giá cao).</p>
+        </div>
+        
+        <div class="value-item">
+          <h4>🎯 Vui chơi – tham quan</h4>
+          <p><strong>Must-visit:</strong> Bãi Sau, Bãi Trước, Tượng Chúa Kitô, Hải đăng Vũng Tàu.</p>
+          <p><strong>Trải nghiệm:</strong>  Leo núi Nhỏ ngắm bình minh, đi cáp treo Hồ Mây, dạo biển đêm, cà phê view biển.</p>
+        </div>
+        
+        <div class="value-item">
+          <h4>🛍️ Mua sắm</h4>
+          <p><strong>Đặc sản:</strong>  Mực một nắng, cá khô, bánh bông lan trứng muối, muối tôm.</p>
+          <p><strong>Mua tại:</strong> Chợ Xóm Lưới, chợ Vũng Tàu, cửa hàng đặc sản uy tín (đóng gói sẵn, dễ mang).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ĐÃ SỬA: Call to action -->
+  <section style="padding: 60px 10%; text-align: center;">
+    <div class="cta-box" style="max-width: 800px; margin: 0 auto;">
+      <h3>Chia sẻ kinh nghiệm của bạn</h3>
+      <p style="font-size: 1.1rem; margin: 20px 0;">
+        Bạn đã từng đến Vũng Tàu? Hãy chia sẻ trải nghiệm của bạn để giúp đỡ các du khách khác!
+      </p>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="guikinhnghiem.html" class="btn-gold">Gửi kinh nghiệm</a>
+        <a href="diem_den.html" class="btn-gold" style="background: var(--navy);">Khám phá điểm đến</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Công ty Du lịch Vũng Tàu</h3>
+      <p>📍 123 Đường Thùy Vân, Phường Thắng Tam, TP. Vũng Tàu</p>
+      <p>📞 Hotline: <a href="tel:02541234567">0254.123.4567</a></p>
+      <p>✉️ Email: <a href="/cdn-cgi/l/email-protection#96fff8f0f9d6f2e3fafff5fee0e3f8f1e2f7e3b8e0f8"><span class="__cf_email__" data-cfemail="1a73747c755a7e6f767379726c6f747d6e7b6f346c74">[email&#160;protected]</span></a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Liên kết nhanh</h3>
+      <p><a href="gioithieu.html">Giới thiệu</a></p>
+      <p><a href="diem_den.html">Điểm đến</a></p>
+      <p><a href="kinhnghiem.html">Kinh nghiệm</a></p>
+      <p><a href="lienhe.html">Liên hệ</a></p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Kết nối với chúng tôi</h3>
+      <div class="social-links" style="display: flex; flex-direction: column; gap: 12px;">
+        <p style="margin: 0; display: flex; align-items: center; gap: 10px;">
+          <a href="https://www.facebook.com/groups/vungtau/" style="display: flex; align-items: center;">
+            <img src="images/facebook-icon.png" alt="Facebook" style="width: 24px; height: 24px;">
+          </a>
+          <span>Facebook</span>
+        </p>
+        <p style="margin: 0; display: flex; align-items: center; gap: 10px;">
+          <a href="https://www.messenger.com/t/110119428061395" style="display: flex; align-items: center;">
+            <img src="images/messenger-icon.png" alt="Messenger" style="width: 24px; height: 24px;">
+          </a>
+          <span>Messenger</span>
+        </p>
+        <p style="margin: 0; display: flex; align-items: center; gap: 10px;">
+          <a href="#" style="display: flex; align-items: center;">
+            <img src="images/zalo-icon.png" alt="Zalo" style="width: 24px; height: 24px;">
+          </a>
+          <span>Zalo: 0968 0088 37</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2026 Công ty TNHH Du lịch Vũng Tàu. Giấy phép kinh doanh số: 0123456789</p>
+    <p>Bản quyền nội dung thuộc về Du lịch Vũng Tàu. Mọi hành vi sao chép đều bị nghiêm cấm.</p>
+	  
+	  
+	  
+	 
+
+<script src="scripts/taitrang.js"></script>
